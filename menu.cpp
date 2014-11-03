@@ -1,8 +1,8 @@
 #include "student.h"
 
-#define	MENU()	printf("以1开头输入学生信息：\n");	\
-		printf("以2开头查询学生信息：\n");	\
-		printf("以0开头退出系统\n");			\
+#define	MENU()	printf("以1开头输入学生信息：\n");\
+		printf("以2开头查询学生信息：\n");\
+		printf("以0开头退出系统\n");\
 		printf("请选择一项菜单：");
 
 char menu()
