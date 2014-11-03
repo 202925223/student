@@ -18,10 +18,8 @@ void InputStu(stusystem *sys)
 			sys->tail = sys->tail->next;
 			sys->tail->next = NULL;
 		}
-		printf("请输入学生的id：");
-		scanf("%s", sys->tail->id);
-		printf("请输入学生的名字：");
-		scanf("%s", sys->tail->name);
+		printf("请输入学生的id和名字（以空格键分开）：");
+		scanf("%s %s", sys->tail->id, sys->tail->name);
 		printf("你输入的学生信息是：id: %s, name: %s\n", sys->tail->id, sys->tail->name);
 		do
 		{
