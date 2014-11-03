@@ -9,4 +9,5 @@ void ExitStuSystem(stusystem *sys)
 		temp->next = NULL;
 		free(temp);	
 	}
+	sys->tail = NULL;
 }
