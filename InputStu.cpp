@@ -27,6 +27,8 @@ void InputStu(stusystem *sys)
 			if (c == 'n' || c == 'N')
 			{
 				c = getchar();
+				if (c == '\n')
+					printf("要继续输入学生信息吗？[yes]+回车继续，[no]+回车取消\n");
 				if (c == 'o' || c == 'O')
 				{
 					c = getchar();
@@ -37,9 +39,13 @@ void InputStu(stusystem *sys)
 			else if (c == 'y' || c == 'Y')
 			{
 				c = getchar();
+				if (c == '\n')
+					printf("要继续输入学生信息吗？[yes]+回车继续，[no]+回车取消\n");
 				if (c == 'e' || c == 'E')
 				{
 					c = getchar();
+					if (c == '\n')
+					printf("要继续输入学生信息吗？[yes]+回车继续，[no]+回车取消\n");
 					if (c == 's' || c == 'S')
 					{
 						c = getchar();
