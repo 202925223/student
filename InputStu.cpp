@@ -31,9 +31,7 @@ void InputStu(stusystem *sys)
 				{
 					c = getchar();
 					if (c == '\n')
-					{
 						strcpy(yes, "no");
-					}
 				}
 			}
 			else if (c == 'y' || c == 'Y')
@@ -46,10 +44,7 @@ void InputStu(stusystem *sys)
 					{
 						c = getchar();
 						if (c == '\n')
-						{
-							strcpy(yes, "yes");
 							break;
-						}
 					}
 				}
 			}
@@ -59,9 +54,8 @@ void InputStu(stusystem *sys)
 					printf("要继续输入学生信息吗？[yes]+回车继续，[no]+回车取消\n");
 			}
 		} while (strcmp(yes, "no"));
+		
 		if (!strcmp(yes, "no"))
-		{
 			break;
-		}
 	} while (!strcmp(yes, "yes"));
 }
