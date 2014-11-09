@@ -20,7 +20,7 @@ void StuSystemRun(stusystem *sys)
 		case '2':
 			printf("开始学生信息查询模块...\n");
 			CheckStu(sys);
-			printf("开始学生信息查询模块...\n");
+			printf("结束学生信息查询模块...\n");
 			break;
 		default:
 			printf("没有此菜单，请重新选择一项：\n");
